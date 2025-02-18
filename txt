@@ -1,0 +1,105 @@
+Para definir o nome de usuário:
+    git config --global user.name "Seu Nome"
+Define o nome de usuário do Git, que será associado aos commits.
+   
+Para definir o e-mail:
+    git config --global user.email "seuemail"
+Define o e-mail do Git, que será associado aos commits.
+
+    git config --list
+Exibe as configurações atuais do Git, como nome de usuário e e-mail.
+
+   git init
+Inicializa um novo repositório Git no diretório atual.
+
+   git clone <urldorepositorio>
+Clona um repositório remoto para a máquina local.
+
+Para adicionar um arquivo específico:
+    git add <arquivo>
+Adiciona um arquivo específico para ser rastreado pelo Git.
+   
+Para adicionar todos os arquivos modificados:
+    git add .
+Adiciona todos os arquivos modificados no diretório atual.
+
+    git status
+Mostra o estado atual dos arquivos, se estão prontos para commit ou se há arquivos não rastreados.
+
+   git rm --cached <arquivo>
+Remove um arquivo do rastreamento do Git, mas mantém o arquivo no sistema de arquivos local.
+
+   git commit -m "Mensagem do commit"
+Faz um commit com as alterações preparadas, associando uma mensagem explicando as mudanças.
+
+   git log
+ Exibe um histórico dos commits realizados no repositório, com detalhes como o autor e a data.
+
+    git branch
+Exibe uma lista de todas as branches locais no repositório.
+
+    git branch <nome-da-branch>
+Cria uma nova branch local, mas não muda para ela automaticamente.
+
+    git checkout <nome-da-branch>
+Muda para a branch especificada.
+
+    git checkout -b <nome-da-branch>
+Cria e muda para a nova branch em um único comando.
+
+    git branch -d <nome-da-branch>
+Deleta uma branch local, mas só se ela já foi completamente mesclada.
+
+    git merge <nome-da-branch>
+Mescla as alterações da branch especificada na branch atual.
+
+    git remote add origin <url-do-repositorio>
+ Associa um repositório remoto ao repositório local.
+
+    git remote -v
+Exibe a URL do repositório remoto associado ao repositório local.
+
+    git fetch
+Baixa as alterações do repositório remoto, mas não as aplica ao seu repositório local.
+
+    git pull origin <nome-da-branch>
+Baixa e mescla as alterações do repositório remoto na branch atual.
+
+    git push origin <nome-da-branch>
+Envia os commits da branch local para o repositório remoto.
+
+    git push --force origin <nome-da-branch>
+ Força o envio dos commits para o repositório remoto, sobrescrevendo alterações, cuidado ao usar.
+
+    git push origin --delete <nome-da-branch>
+Deleta uma branch remota no repositório.
+
+    git pull --rebase
+Faz um pull do repositório remoto, mas tenta evitar um merge criando um rebase.
+
+    git checkout -- <arquivo>
+Restaura um arquivo para o estado do último commit.
+
+    git reset --soft HEAD~1
+Desfaz o último commit, mas mantém as alterações no diretório de trabalho.
+
+    git reset --hard HEAD~1
+Desfaz o último commit e remove todas as alterações do diretório de trabalho.
+
+    git diff
+Exibe as diferenças entre o estado atual do repositório e o último commit.
+
+    git clean -fd
+Remove arquivos não rastreados, como arquivos temporários ou de compilação.
+
+1. Criar uma nova branch e trabalhar nela:
+   git checkout -b minha-branch
+
+2. Modificar ou adicionar arquivos.
+
+3. Adicionar e commitar:
+   git add .
+   git commit -m "Mensagem sobre o que foi feito"
+
+4. Enviar a branch para o repositório remoto:
+   git push origin minha-branch

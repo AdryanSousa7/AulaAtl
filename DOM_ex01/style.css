@@ -1,0 +1,16 @@
+body{
+    /* Fonte para todos do body */
+    font-family: sans-serif;
+    /* Centraliza tudo do body */
+    text-align: center;
+    /* Margin de todo o body */
+    margin-top: 50px;
+}
+button{
+    padding: 10px 20px;
+    background: #009c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
